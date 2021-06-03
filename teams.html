@@ -10,32 +10,55 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
-    <script src='teams.js'></script>
+    <script type='text/javascript' src='teams.js'></script>
+    <title>TG</title>
 </head>
 
 <body>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
-    <div class='container-md bg-dark'>
-        <div class='row text-center'>
+    <div class='container-md bg-success mt-5 text-center' id='form'>
+        <div class='row d-inline'>
             <h2 class='text-white'>Team Generator</h2>
         </div>
-        <form>
-            <div class="form-group text-white">
-                <label for="exampleInputEmail1">Number of teams: </label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Number Of Teams</label>
             </div>
-            <div class="form-group text-white">
-                <label for="exampleInputSize">Team Size: </label>
-                <input type="text" class="form-control" id="exampleInputSize" aria-describedby="emailHelp" placeholder="">
+            <select class="custom-select d-inline" id="inputGroupSelect01">
+              <option selected>Choose...</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">Five</option>
+              <option value="6">Six</option>
+              <option value="7">Seven</option>
+              <option value="8">Eight</option>
+              <option value="9">Nine</option>
+              <option value="10">Ten</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Size Of the Teams</label>
             </div>
-            <div class="form-group text-white">
-                <label for="exampleInputPassword1">UserNames: </label>
-                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter all the usernames">
-            </div>
-            <button type="submit" class="btn btn-primary" onclick='submitForm()'>Submit</button>
-        </form>
+            <select class="custom-select" id="inputGroupSelect02">
+              <option selected>Choose...</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+                <option value="5">Five</option>
+                <option value="6">Six</option>
+                <option value="7">Seven</option>
+                <option value="8">Eight</option>
+                <option value="9">Nine</option>
+                <option value="10">Ten</option>
+            </select>
+        </div>
+        <button type="submit" id='submit' class="btn btn-primary my-3" onclick='submitForm()'>Submit</button>
     </div>
 
 </body>
